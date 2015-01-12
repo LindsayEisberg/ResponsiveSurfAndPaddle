@@ -158,32 +158,180 @@ footer img {
 
 }
 
-/* @media screen and (min-width:320px) and (max-width:550px) {
+@media screen and (min-width:320px) and (max-width:549px) {
 
   .header {
-    height: 300px;
+    height: 250px;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 3.5em;
     padding-top: 20px;
   }
 
   h4 {
-    font-size: .9em;
+    font-size: 1.1em;
   }
-  NAV
+  /*NAV*/
   nav {
-    max-width: 800px;
+    max-width: 525px;
     width: 100%;
     margin: auto;
-    padding: 20px;
+    padding: 0;
   }
 
-  .blog_top {
-    margin-left: 20px;
+  nav ul {
+    text-align: center;
+    margin: 0 0 0 20px;
+    padding: 0 0 10px 0;
+    display: block;
+    clear: both;
+    float: none;
   }
- */
+  nav li {
+    text-align: center;
+    margin: 0;
+    padding: 0 0 0 10px;
+  }
+
+  .blog_top:first-child {
+    display: none;
+
+  }
+
+  .blog_top:last-child {
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+
+  nav a span:first-child {
+    display: none;
+  }
+
+  /*MAIN SECTION*/
+
+  section {
+    max-width: 525px;
+    width: 100%;
+    margin: 5px auto;
+    display: block;
+  }
+
+  section h2{
+    font-size: 3em;
+  }
+
+  section h3 {
+    font-size: 24px;
+  }
+
+  .postname span{
+    font-size: 12px;
+  }
+
+  .postname img{
+    height: 25px;
+    width: 25px;
+  }
+
+  /*SIDEBAR*/
+
+  aside {
+    max-width: 525px;
+    width: 100%;
+    margin: 50px auto;
+    display: block;
+    padding: 0 0 0 0;
+  }
+
+  .sidemid_overlay {
+    max-width: 320px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .sidemid p{
+    width: 320px;
+    text-align: right;
+    margin: auto;
+  }
+
+  .sidebottom h3 {
+    font-size: 18px;
+  }
+
+  aside p {
+    font-size: 14px;
+  }
+
+
+  /*MOST POPULAR POSTS*/
+
+  article {
+    max-width: 525px;
+    width: 100%;
+    margin: auto;
+  }
+
+
+  article li {
+    margin: 20px;
+  }
+
+  article h2 {
+    font-size: 65px;
+    margin-bottom: 20px;
+  }
+
+  .popular_link h3 {
+    font-size: 24px;
+  }
+
+  #article_link_1, #article_link_2, #article_link_3, #article_link_4 {
+    max-height: 375px;
+    max-width: 375px;
+  }
+  /*FOOTER*/
+
+  footer {
+    text-align: center;
+  }
+
+  .foot_wrap {
+    max-width: 525px;
+    width: 100%;
+    margin: auto;
+  }
+
+  footer nav:first-child {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  footer nav:last-child {
+    display:none;
+  }
+
+
+  footer p {
+    clear: both;
+    text-align: center;
+    display: inline;
+    font-size: 1.1em;
+  }
+
+  footer img {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    vertical-align: bottom;
+    padding-right: 22px;
+  }
+
+
+}
 
 @media screen and (min-width:550px) and (max-width:800px) {
 
