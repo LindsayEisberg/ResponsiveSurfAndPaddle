@@ -12,7 +12,7 @@
   h4 {
     font-size: .9em;
   }
-
+/*NAV*/
   nav {
     max-width: 320px;
     padding: 0;
@@ -22,8 +22,13 @@
     text-align: center;
     margin-top: 0;
     padding-top: 0;
+    display: block;
+    clear: both;
+    float: none;
   }
-
+nav li {
+  text-align: center;
+}
 .blog_top a{
   display: none;
 }
@@ -32,6 +37,8 @@
   text-align: center;
   margin: auto;
 }
+
+/*MAIN SECTION*/
 
 section {
   max-width: 300px;
@@ -42,4 +49,94 @@ section {
 
 section p{
   padding: 0;
+}
+
+.postname img{
+  display: none;
+}
+
+.postname span:first-child {
+  display: none;
+}
+
+.gray {
+  display: none;
+}
+
+/*SIDEBAR*/
+
+aside {
+  max-width: 300px;
+  width: 100%;
+  margin: 50px auto;
+  display: block;
+  padding: 0 0 0 0;
+}
+
+.sidebottom {
+  display: none;
+}
+
+/*MOST POPULAR POSTS*/
+
+article {
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+}
+
+article li:first-child {
+  display: none;
+}
+
+#article_link_1 .popular_link {
+  display: none;
+}
+
+article li {
+  margin-bottom: 20px;
+}
+
+article h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.popular_link h3 {
+  font-size: 24px;
+}
+
+/*FOOTER*/
+
+
+.foot_wrap {
+  max-width: 320px;
+  width: 100%;
+  margin: auto;
+}
+
+footer nav:first-child {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+footer nav:last-child {
+  display:none;
+}
+
+
+footer p {
+  clear: both;
+  text-align: center;
+}
+
+footer img {
+  text-align: center;
+  display: block;
+  margin: auto;
+  vertical-align: bottom;
+}
+
+
 }
