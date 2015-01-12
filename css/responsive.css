@@ -20,22 +20,31 @@
 
   nav ul {
     text-align: center;
-    margin-top: 0;
-    padding-top: 0;
+    margin: 0 0 0 20px;
+    padding: 0 0 10px 0;
     display: block;
     clear: both;
     float: none;
   }
 nav li {
   text-align: center;
-}
-.blog_top a{
-  display: none;
+  margin: 0;
+  padding: 0 0 0 10px;
 }
 
-.blog_top img {
+.blog_top:first-child {
+  display: none;
+
+}
+
+.blog_top:last-child {
   text-align: center;
   margin: auto;
+  display: block;
+}
+
+nav a span:first-child {
+  display: none;
 }
 
 /*MAIN SECTION*/
@@ -108,6 +117,9 @@ article h2 {
 
 /*FOOTER*/
 
+footer {
+  text-align: center;
+}
 
 .foot_wrap {
   max-width: 320px;
@@ -129,13 +141,16 @@ footer nav:last-child {
 footer p {
   clear: both;
   text-align: center;
+  display: inline;
+  font-size: 1.1em;
 }
 
 footer img {
   text-align: center;
   display: block;
-  margin: auto;
+  margin: 10px auto;
   vertical-align: bottom;
+  padding-right: 22px;
 }
 
 
