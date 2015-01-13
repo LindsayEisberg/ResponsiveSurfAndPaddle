@@ -15,7 +15,7 @@
   /*NAV*/
   nav {
     max-width: 320px;
-    width: 100%;
+    width: $media_size;
     margin: auto;
     padding: 0;
   }
@@ -53,7 +53,7 @@
 
   section {
     max-width: 300px;
-    width: 100%;
+    width: $media_size;
     margin: 5px auto;
     display: block;
   }
@@ -86,7 +86,7 @@
 
   aside {
     max-width: 300px;
-    width: 100%;
+    width: $media_size;
     margin: 50px auto;
     display: block;
     padding: 0 0 0 0;
@@ -100,7 +100,7 @@
 
   article {
     max-width: 300px;
-    width: 100%;
+    width: $media_size;
     margin: auto;
   }
 
@@ -133,7 +133,7 @@
 
   .foot_wrap {
     max-width: 320px;
-    width: 100%;
+    width: $media_size;
     margin: auto;
   }
 
@@ -183,7 +183,7 @@
   /*NAV*/
   nav {
     max-width: 525px;
-    width: 100%;
+    width: $media_size;
     margin: auto;
     padding: 0;
   }
@@ -221,7 +221,7 @@
 
   section {
     max-width: 525px;
-    width: 100%;
+    width: $media_size;
     margin: 5px auto;
     display: block;
   }
@@ -259,7 +259,7 @@
 
   aside {
     max-width: 525px;
-    width: 100%;
+    width: $media_size;
     margin: 50px auto;
     display: block;
     padding: 0 0 0 0;
@@ -267,7 +267,7 @@
 
   .sidemid_overlay {
     max-width: 320px;
-    width: 100%;
+    width: $media_size;
     margin: auto;
   }
 
@@ -290,7 +290,7 @@
 
   article {
     max-width: 525px;
-    width: 100%;
+    width: $media_size;
     margin: auto;
   }
 
@@ -320,7 +320,7 @@
 
   .foot_wrap {
     max-width: 525px;
-    width: 100%;
+    width: $media_size;
     margin: auto;
   }
 
@@ -370,7 +370,7 @@
   /*NAV*/
   nav {
     max-width: 800px;
-    width: 100%;
+    width: $media_size;
     margin: auto;
     padding: 20px;
   }
@@ -383,7 +383,7 @@
 
   section {
     max-width: 760px;
-    width: 100%;
+    width: $media_size;
     margin: 5px auto;
     display: block;
   }
@@ -409,7 +409,7 @@
 
   aside {
     max-width: 760px;
-    width: 100%;
+    width: $media_size;
     margin: 50px auto;
     display: block;
     padding: 0 0 0 0;
@@ -417,7 +417,7 @@
 
   .sidemid_overlay {
     max-width: 320px;
-    width: 100%;
+    width: $media_size;
     margin: auto;
   }
 
@@ -440,7 +440,7 @@
 
   article {
     max-width: 760px;
-    width: 100%;
+    width: $media_size;
     margin: auto;
   }
 
@@ -470,7 +470,7 @@
 
   .foot_wrap {
     max-width: 800px;
-    width: 100%;
+    width: $media_size;
     margin: auto;
   }
 

@@ -58,8 +58,10 @@ p {
 
 a {
   text-decoration: none;
-  -webkit-transition: color 6s ease-in-out;
-  transition: color .5s ease-in-out; }
+  -webkit-transition: color 1s ease-in-out;
+  -moz-transition: color 1s ease-in-out;
+  -o-transitions: color 1s ease-in-out;
+  transition: color 1s ease-in-out; }
 
 /*NAV*/
 nav {
@@ -288,50 +290,40 @@ color: white;
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: 300px; }
+  #article_link_1:hover {
+    background: none;
+    background-image: url('../photos/lower1.jpg');
+    background-size: 300px 300px; }
 
 #article_link_2 {
   background-image: linear-gradient(rgba(64, 134, 191, 0.6), rgba(64, 134, 191, 0.6)), url('../photos/lower2.jpg');
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: 300px; }
+  #article_link_2:hover {
+    background: none;
+    background-image: url('../photos/lower2.jpg');
+    background-size: 300px 300px; }
 
 #article_link_3 {
   background-image: linear-gradient(rgba(64, 134, 191, 0.6), rgba(64, 134, 191, 0.6)), url('../photos/lower3.jpg');
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: 300px; }
+  #article_link_3:hover {
+    background: none;
+    background-image: url('../photos/lower3.jpg');
+    background-size: 300px 300px; }
 
 #article_link_4 {
   background-image: linear-gradient(rgba(64, 134, 191, 0.6), rgba(64, 134, 191, 0.6)), url('../photos/lower4.jpg');
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: 300px; }
-
-/* #overlay    {
-background:rgba(64, 134, 191, 0.75);
-padding:45px 0 66px 0;
-opacity:0;
-
-} */
-#article_link_1:hover {
-  background: none;
-  background-image: url('../photos/lower1.jpg');
-  background-size: 300px 300px; }
-
-#article_link_2:hover {
-  background: none;
-  background-image: url('../photos/lower2.jpg');
-  background-size: 300px 300px; }
-
-#article_link_3:hover {
-  background: none;
-  background-image: url('../photos/lower3.jpg');
-  background-size: 300px 300px; }
-
-#article_link_4:hover {
-  background: none;
-  background-image: url('../photos/lower4.jpg');
-  background-size: 300px 300px; }
+  #article_link_4:hover {
+    background: none;
+    background-image: url('../photos/lower4.jpg');
+    background-size: 300px 300px; }
 
 /*FOOTER*/
 footer {

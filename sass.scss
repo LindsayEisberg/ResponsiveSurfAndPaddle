@@ -1,6 +1,14 @@
 $dark_blue: #083452;
 $light_blue: #4086BF;
 $article_height: 300px;
+$media_size: 100%;
+
+@mixin transition ($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transitions: $transition;
+  transition: $transition;
+}
 
 body {
   padding: 0;
@@ -81,8 +89,7 @@ p {
 
 a {
   text-decoration: none;
-  -webkit-transition: color 6s ease-in-out;
-  transition: color .5s ease-in-out;
+  @include transition(color 1s ease-in-out);
 }
 
 
@@ -242,7 +249,7 @@ aside {
   margin-left: 5%;
   padding-top: 30px;
 
-  & p{
+  &p{
     font-size: 11px;
     line-height: 1.3;
   }
@@ -387,6 +394,12 @@ color: white;
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: $article_height;
+  &:hover {
+    background: none;
+    background-image: url('../photos/lower1.jpg');
+    background-size: 300px 300px;
+
+  }
 }
 
 #article_link_2{
@@ -397,6 +410,12 @@ color: white;
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: $article_height;
+  &:hover {
+    background: none;
+    background-image: url('../photos/lower2.jpg');
+    background-size: 300px 300px;
+
+  }
 }
 
 #article_link_3{
@@ -407,6 +426,12 @@ color: white;
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: $article_height;
+  &:hover {
+    background: none;
+    background-image: url('../photos/lower3.jpg');
+    background-size: 300px 300px;
+
+  }
 
 }
 
@@ -418,44 +443,15 @@ color: white;
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: $article_height;
+  &:hover {
+    background: none;
+    background-image: url('../photos/lower4.jpg');
+    background-size: 300px 300px;
+
+  }
 
 }
 
-
-/* #overlay    {
-background:rgba(64, 134, 191, 0.75);
-padding:45px 0 66px 0;
-opacity:0;
-
-} */
-
-#article_link_1:hover {
-  background: none;
-  background-image: url('../photos/lower1.jpg');
-  background-size: 300px 300px;
-
-}
-
-#article_link_2:hover {
-  background: none;
-  background-image: url('../photos/lower2.jpg');
-  background-size: 300px 300px;
-
-}
-#article_link_3:hover {
-  background: none;
-  background-image: url('../photos/lower3.jpg');
-  background-size: 300px 300px;
-
-}
-
-#article_link_4:hover {
-  background: none;
-  background-image: url('../photos/lower4.jpg');
-  background-size: 300px 300px;
-
-
-}
 
 
 /*FOOTER*/
