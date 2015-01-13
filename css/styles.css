@@ -213,6 +213,27 @@ section h2 {
   font-size: 24px;
 }
 
+section p > a{
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  color: #B4B9BC;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+  font-size: 1em;
+
+}
+
+section p > a:hover{
+  background-color: white;
+  font-family: 'Lato', sans-serif;
+  color: #083452;
+  padding: 0;
+  margin: 0;
+  text-decoration: underline;
+
+
+}
 /*SIDEBAR*/
 
 aside {
