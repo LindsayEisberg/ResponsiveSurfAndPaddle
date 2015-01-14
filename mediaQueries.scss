@@ -186,21 +186,21 @@
     width: $media_size;
     margin: auto;
     padding: 0;
+    & ul {
+      text-align: center;
+      margin: 0 0 0 20px;
+      padding: 0 0 10px 0;
+      display: block;
+      clear: both;
+      float: none;
+    }
+    & li {
+      text-align: center;
+      margin: 0;
+      padding: 0 0 0 10px;
+    }
   }
 
-  nav ul {
-    text-align: center;
-    margin: 0 0 0 20px;
-    padding: 0 0 10px 0;
-    display: block;
-    clear: both;
-    float: none;
-  }
-  nav li {
-    text-align: center;
-    margin: 0;
-    padding: 0 0 0 10px;
-  }
 
   .blog_top:first-child {
     display: none;
@@ -224,14 +224,12 @@
     width: $media_size;
     margin: 5px auto;
     display: block;
-  }
-
-  section h2{
-    font-size: 3em;
-  }
-
-  section h3 {
-    font-size: 24px;
+    & h2{
+      font-size: 3em;
+    }
+    & h3 {
+      font-size: 24px;
+    }
   }
 
   .postname span{
@@ -292,17 +290,16 @@
     max-width: 525px;
     width: $media_size;
     margin: auto;
+    & li {
+      margin: 20px;
+    }
+    & h2 {
+      font-size: 65px;
+      margin-bottom: 20px;
+    }
   }
 
 
-  article li {
-    margin: 20px;
-  }
-
-  article h2 {
-    font-size: 65px;
-    margin-bottom: 20px;
-  }
 
   .popular_link h3 {
     font-size: 24px;
