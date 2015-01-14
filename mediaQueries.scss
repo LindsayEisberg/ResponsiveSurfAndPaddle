@@ -18,20 +18,19 @@
     width: $media_size;
     margin: auto;
     padding: 0;
-  }
-
-  nav ul {
-    text-align: center;
-    margin: 0 0 0 20px;
-    padding: 0 0 10px 0;
-    display: block;
-    clear: both;
-    float: none;
-  }
-  nav li {
-    text-align: center;
-    margin: 0;
-    padding: 0 0 0 10px;
+    & ul {
+      text-align: center;
+      margin: 0 0 0 20px;
+      padding: 0 0 10px 0;
+      display: block;
+      clear: both;
+      float: none;
+    }
+    & li {
+      text-align: center;
+      margin: 0;
+      padding: 0 0 0 10px;
+    }
   }
 
   .blog_top:first-child {
