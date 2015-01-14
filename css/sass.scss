@@ -26,6 +26,16 @@ $secondary_font: 'Roboto Condensed', sans-serif;
   margin-top: -8px;
 }
 
+@mixin pop_article {
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+}
+
+@mixin pop_article_hover {
+  background: none;
+  background-size: 300px 300px;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -278,6 +288,7 @@ aside {
   p {
     text-decoration: underline;
     text-align: right;
+    display: block;
     margin-top: 0;
     font-size: 10px;
   }
@@ -286,8 +297,9 @@ aside {
 
 .sidemid_overlay {
 
-  width: 100%;
+  width: 295px;
   height: 383px;
+  margin: auto;
   @include back($back_gradient, url('../photos/paddle.png'));
   background-repeat: no-repeat;
 
@@ -305,29 +317,27 @@ aside {
   margin-top: 30px;
 }
 /*Bottom of Content*/
+article {
+  h2 {
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 0;
+  }
+  li {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    font-size: 16px;
+  }
+  a {
+    text-decoration: none;
+    font-family: $main_font;
+    color: $dark_blue;
 
-article h2 {
-  text-align: center;
-}
-
-article ul {
-  list-style-type: none;
-  padding: 0;
-  font-size: 0;
-}
-
-article li {
-  display: inline-block;
-  width: 300px;
-  height: 300px;
-  font-size: 16px;
-}
-
-article a {
-  text-decoration: none;
-  font-family: $main_font;
-  color: $dark_blue;
-
+  }
 }
 
 .popular_link {
@@ -336,78 +346,64 @@ article a {
   float: left;
   display: inline;
   position: relative;
+  h3 {
+    color: $dark_blue;
+    font-size: 20px;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+  }
+  &:hover {
+    h3 {
+      color: white;
+    }
+  }
 }
 
-.popular_link h3 {
-  color: $dark_blue;
-  font-size: 20px;
-  text-align: left;
-  position: absolute;
-  left: 20px;
-  bottom: 20px;
-}
-
-.popular_link:hover h3 {
-  color: white;
-}
-
-/* article li a:hover{
-background: linear-gradient(
-rgba(64, 134, 191, 0.5),
-rgba(64, 134, 191, 0.5)
-);
-color: white;
-} */
 
 #article_link_1{
   @include back($back_gradient, url('../photos/lower1.jpg'));
-  background-size: 300px 300px;
-  background-repeat: no-repeat;
+  @include pop_article;
   height: $article_height;
   &:hover {
-    background: none;
+    @include pop_article_hover;
     background-image: url('../photos/lower1.jpg');
-    background-size: 300px 300px;
+
 
   }
 }
 
 #article_link_2{
   @include back($back_gradient, url('../photos/lower2.jpg'));
-  background-size: 300px 300px;
-  background-repeat: no-repeat;
+  @include pop_article;
   height: $article_height;
   &:hover {
-    background: none;
+    @include pop_article_hover;
     background-image: url('../photos/lower2.jpg');
-    background-size: 300px 300px;
+
 
   }
 }
 
 #article_link_3{
   @include back($back_gradient, url('../photos/lower3.jpg'));
-  background-size: 300px 300px;
-  background-repeat: no-repeat;
+  @include pop_article;
   height: $article_height;
   &:hover {
-    background: none;
+    @include pop_article_hover;
     background-image: url('../photos/lower3.jpg');
-    background-size: 300px 300px;
-
   }
 
 }
 
 #article_link_4{
   @include back($back_gradient, url('../photos/lower4.jpg'));
-  background-size: 300px 300px;
-  background-repeat: no-repeat;
+  @include pop_article;
   height: $article_height;
   &:hover {
-    background: none;
+    @include pop_article_hover;
     background-image: url('../photos/lower4.jpg');
-    background-size: 300px 300px;
 
   }
 
@@ -422,44 +418,37 @@ footer {
   padding: 10px;
   color: #B4B9BC;
   font-size: 12px;
-
 }
-
-.foot_wrap {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-footer img {
-  display: inline-block;
-  height: 40px;
-  width: 50px;
-  margin-top:10px;
-  margin-left:10px;
-}
-
-footer p {
-  display: inline-block;
-  vertical-align: bottom;
-}
-
-footer nav {
-  float: right;
-  width: auto;
-}
-
-footer nav:first-child {
-  display: none;
-}
-
-footer nav ul {
-  padding: 0;
-  margin: 0;
-}
-
-footer a {
-  color: #B4B9BC;
-  font-size: 12px;
-
+  .foot_wrap {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer {
+    img {
+    display: inline-block;
+    height: 40px;
+    width: 50px;
+    margin-top:10px;
+    margin-left:10px;
+  }
+  p {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+  nav {
+    float: right;
+    width: auto;
+    &:last-child {
+      display: none;
+    }
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  a {
+    color: #B4B9BC;
+    font-size: 12px;
+  }
 }
