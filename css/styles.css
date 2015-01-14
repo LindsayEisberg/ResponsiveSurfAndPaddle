@@ -275,7 +275,7 @@ rgba(64, 134, 191, 0.5)
 color: white;
 } */
 #article_link_1 {
-  background-image: linear-gradient(rgba(64, 134, 191, 0.6), rgba(64, 134, 191, 0.6)), url('../photos/lower1.jpg');
+  background: linear-gradient(rgba(64, 134, 191, 0.5), rgba(64, 134, 191, 0.5)), url('../photos/lower1.jpg');
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: 300px; }
@@ -285,7 +285,7 @@ color: white;
     background-size: 300px 300px; }
 
 #article_link_2 {
-  background-image: linear-gradient(rgba(64, 134, 191, 0.6), rgba(64, 134, 191, 0.6)), url('../photos/lower2.jpg');
+  background: linear-gradient(rgba(64, 134, 191, 0.5), rgba(64, 134, 191, 0.5)), url('../photos/lower2.jpg');
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: 300px; }
@@ -295,7 +295,7 @@ color: white;
     background-size: 300px 300px; }
 
 #article_link_3 {
-  background-image: linear-gradient(rgba(64, 134, 191, 0.6), rgba(64, 134, 191, 0.6)), url('../photos/lower3.jpg');
+  background: linear-gradient(rgba(64, 134, 191, 0.5), rgba(64, 134, 191, 0.5)), url('../photos/lower3.jpg');
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: 300px; }
@@ -305,7 +305,7 @@ color: white;
     background-size: 300px 300px; }
 
 #article_link_4 {
-  background-image: linear-gradient(rgba(64, 134, 191, 0.6), rgba(64, 134, 191, 0.6)), url('../photos/lower4.jpg');
+  background: linear-gradient(rgba(64, 134, 191, 0.5), rgba(64, 134, 191, 0.5)), url('../photos/lower4.jpg');
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: 300px; }

@@ -2,12 +2,21 @@ $dark_blue: #083452;
 $light_blue: #4086BF;
 $article_height: 300px;
 $media_size: 100%;
+$back-gradient: linear-gradient(
+rgba(64, 134, 191, 0.5),
+rgba(64, 134, 191, 0.5)
+);
+
 
 @mixin transition ($transition) {
   -webkit-transition: $transition;
   -moz-transition: $transition;
   -o-transitions: $transition;
   transition: $transition;
+}
+
+@mixin back ($back_gradient, $imgOrURL) {
+  background: ($back_gradient, $imgOrURL);
 }
 
 body {
@@ -27,10 +36,7 @@ img {
 }
 
 .header {
-  background:  linear-gradient(
-  rgba(64, 134, 191, 0.5),
-  rgba(64, 134, 191, 0.5)
-  ), url('../photos/header_img2.jpg');
+  @include back($back_gradient, url('../photos/header_img2.jpg'));
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -273,11 +279,7 @@ aside {
   display: block;
   height: 90px;
   width: 90px;
-
-  background: linear-gradient(
-  rgba(64, 134, 191, 0.5),
-  rgba(64, 134, 191, 0.5)
-  ), url('../photos/circlehead.png');
+  @include back($back_gradient, url('../photos/circlehead.png'));
   border-radius: 100%;
   background-repeat: no-repeat;
   margin: auto;
@@ -292,10 +294,7 @@ aside {
 
   width: 100%;
   height: 383px;
-  background: linear-gradient(
-  rgba(64, 134, 191, 0.5),
-  rgba(64, 134, 191, 0.5)
-  ), url('../photos/paddle.png');
+  @include back($back_gradient, url('../photos/paddle.png'));
   background-repeat: no-repeat;
 
 }
@@ -373,10 +372,7 @@ color: white;
 } */
 
 #article_link_1{
-  background-image: linear-gradient(
-  rgba(64, 134, 191, 0.6),
-  rgba(64, 134, 191, 0.6)
-  ),url('../photos/lower1.jpg');
+  @include back($back_gradient, url('../photos/lower1.jpg'));
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: $article_height;
@@ -389,10 +385,7 @@ color: white;
 }
 
 #article_link_2{
-  background-image: linear-gradient(
-  rgba(64, 134, 191, 0.6),
-  rgba(64, 134, 191, 0.6)
-  ),url('../photos/lower2.jpg');
+  @include back($back_gradient, url('../photos/lower2.jpg'));
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: $article_height;
@@ -405,10 +398,7 @@ color: white;
 }
 
 #article_link_3{
-  background-image: linear-gradient(
-  rgba(64, 134, 191, 0.6),
-  rgba(64, 134, 191, 0.6)
-  ),url('../photos/lower3.jpg');
+  @include back($back_gradient, url('../photos/lower3.jpg'));
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: $article_height;
@@ -422,10 +412,7 @@ color: white;
 }
 
 #article_link_4{
-  background-image: linear-gradient(
-  rgba(64, 134, 191, 0.6),
-  rgba(64, 134, 191, 0.6)
-  ),url('../photos/lower4.jpg');
+  @include back($back_gradient, url('../photos/lower4.jpg'));
   background-size: 300px 300px;
   background-repeat: no-repeat;
   height: $article_height;
@@ -488,4 +475,3 @@ footer a {
   font-size: 12px;
 
 }
-@import 'mediaQueries';
