@@ -6,6 +6,8 @@ $back-gradient: linear-gradient(
 rgba(64, 134, 191, 0.5),
 rgba(64, 134, 191, 0.5)
 );
+$main_font: 'Lato', sans-serif;
+$secondary_font: 'Roboto Condensed', sans-serif;
 
 
 @mixin transition ($transition) {
@@ -17,6 +19,11 @@ rgba(64, 134, 191, 0.5)
 
 @mixin back ($back_gradient, $imgOrURL) {
   background: ($back_gradient, $imgOrURL);
+}
+
+@mixin bottom_img{
+  vertical-align: top;
+  margin-top: -8px;
 }
 
 body {
@@ -52,7 +59,7 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-family: 'Myriad Pro', sans-serif;
+  font-family: $main_font;
   color: white;
   text-align: center;
   font-size: 80px;
@@ -61,14 +68,8 @@ h1 {
 
 }
 
-h4 {
-  font-family: 'Myriad Pro', sans-serif;
-  color: $dark_blue;
-
-}
-
 h2 {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: $secondary_font;
   font-size: 55px;
   font-weight: 400;
   margin-top: 40px;
@@ -76,20 +77,22 @@ h2 {
 }
 
 h3 {
-  font-family: 'Lato', sans-serif;
+  font-family: $main_font;
   color: $light_blue;
   font-weight: 400;
   font-size: 20px;
 }
 
 h4 {
+  @extend h3;
   font-size: 16px;
-  font-weight: 400;
+  color: $dark_blue;
+
 }
 
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: $main_font;
   color: #B4B9BC;
 }
 
@@ -105,29 +108,30 @@ nav {
   width: 1200px;
   margin: auto;
   padding-top: 20px;
-  & ul {
+  ul {
     float: right;
     margin-right: 40px;
     margin-top: 18px;
   }
-  & li {
+  li {
     display: inline-block;
   }
-  & a {
+  a {
     padding-right: 20px;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: $main_font;
     color: $dark_blue;
     &:hover {
       color: white;
     }
   }
+  img{
+    a{
+      margin-left: 40px;
+    }
+  }
 }
 
-
-nav img a{
-  margin-left: 40px;
-}
 
 .blog_top:last-child {
   display: none;
@@ -145,12 +149,62 @@ section, aside {
 section {
   width: 50%;
   margin-left: 10%;
-
+  img {
+    @include bottom_img;
+  }
+  li {
+    display: inline-block;
+    &:first-child {
+      display: none;
+    }
+  }
+  a {
+    text-decoration: none;
+    font-family: $main_font;
+    font-size: 12px;
+    color:#FFFFFF;
+    margin-right: 5px;
+    background-color: #A4B4C0;
+    padding: 7px 10px 7px 10px;
+    &:hover {
+      background-color: #1871B5;
+      padding: 7px 10px 7px 10px;
+    }
+  }
+  h2{
+    margin-bottom: -10px;
+    line-height: .8em;
+  }
+  p {
+    > a {
+      background-color: white;
+      font-family: $main_font;
+      color: #B4B9BC;
+      padding: 0;
+      margin: 0;
+      text-decoration: underline;
+      font-size: 1em;
+      &:hover {
+        background-color: white;
+        font-family: $main_font;
+        color: $dark_blue;
+        padding: 0;
+        margin: 0;
+        text-decoration: underline;
+      }
+    }
+  }
 }
+
+
+a.gray, a.blue{
+  @include bottom_img;
+}
+
 
 .postname {
   color: $light_blue;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: $secondary_font;
   font-size: 9px;
   margin-top: 20px;
   display:inline-block;
@@ -160,7 +214,7 @@ section {
 
 .postdate {
   color: #B4B9BC;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: $secondary_font;
   font-size: 9px;
   text-decoration: underline;
   display: inline;
@@ -168,73 +222,12 @@ section {
 }
 
 
-section img, a.gray, a.blue {
-  vertical-align: top;
-  margin-top: -8px;
-}
-
-section li:first-child{
-  display: none;
-}
-
-section li {
-  display: inline-block;
-}
-
-section a {
-  text-decoration: none;
-  font-family: 'Lato', sans-serif;
-  font-size: 12px;
-  color:#FFFFFF;
-  margin-right: 5px;
-  background-color: #A4B4C0;
-  padding: 7px 10px 7px 10px;
-
-}
-
-/* .gray {
-background-color: #A4B4C0;
-padding: 7px 10px 7px 10px;
-} */
-
-section a:hover {
-  background-color: #1871B5;
-  padding: 7px 10px 7px 10px
-
-}
-
-
-section h2 {
-  margin-bottom: -10px;
-  line-height: .8em;
-}
-
 .quote_start {
   color:#B4B9BC;
   font-size: 24px;
 }
 
-section p > a{
-  background-color: white;
-  font-family: 'Lato', sans-serif;
-  color: #B4B9BC;
-  padding: 0;
-  margin: 0;
-  text-decoration: underline;
-  font-size: 1em;
 
-}
-
-section p > a:hover{
-  background-color: white;
-  font-family: 'Lato', sans-serif;
-  color: $dark_blue;
-  padding: 0;
-  margin: 0;
-  text-decoration: underline;
-
-
-}
 /*SIDEBAR*/
 
 aside {
@@ -244,25 +237,20 @@ aside {
   margin-left: 5%;
   padding-top: 30px;
 
-  &p{
+  p{
     font-size: 11px;
     line-height: 1.3;
   }
 }
 
-/* aside p {
-  font-size: 11px;
-  line-height: 1.3;
-}
- */
 .sidetop {
   text-align: center;
   margin-bottom: 35px;
-  & h3 {
-    font-family: 'Roboto Condensed', sans-serif;
+  h3 {
+    font-family: $secondary_font;
     font-size: 12px;
   }
-  & a{
+  a{
     color: #B4B9BC;
     font-size: 12px;
     text-decoration: none;
@@ -287,6 +275,12 @@ aside {
 
 .sidemid {
   text-align: center;
+  p {
+    text-decoration: underline;
+    text-align: right;
+    margin-top: 0;
+    font-size: 10px;
+  }
 }
 
 
@@ -299,15 +293,9 @@ aside {
 
 }
 
-.sidemid p{
-  text-decoration: underline;
-  text-align: right;
-  margin-top: 0;
-  font-size: 10px;
-}
 
 .sidebottom h3{
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: $secondary_font;
   font-size: 14px;
 }
 
@@ -337,7 +325,7 @@ article li {
 
 article a {
   text-decoration: none;
-  font-family: 'Lato', sans-serif;
+  font-family: $main_font;
   color: $dark_blue;
 
 }
