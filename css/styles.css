@@ -303,17 +303,22 @@ footer img {
   width: 50px;
   margin-top: 10px;
   margin-left: 10px; }
+
 footer p {
   display: inline-block;
   vertical-align: bottom; }
+
 footer nav {
   float: right;
   width: auto; }
-  footer nav:last-child {
-    display: none; }
-  footer nav ul {
-    padding: 0;
-    margin: 0; }
+
+footer nav:first-child {
+  display: none; }
+
+footer nav ul {
+  padding: 0;
+  margin: 0; }
+
 footer a {
   color: #B4B9BC;
   font-size: 12px; }
@@ -389,40 +394,35 @@ footer a {
         display: none; }
     article h2 {
       font-size: 35px;
-      margin-bottom: 20px; } }
-
-#article_link_1 .popular_link {
-  display: none; }
-
-.popular_link h3, .popular_link h4 {
-  font-size: 24px; }
-
-/*FOOTER*/
-footer {
-  text-align: center; }
-
-.foot_wrap {
-  max-width: 320px;
-  width: 100%;
-  margin: auto; }
-
-footer nav:first-child {
-  display: inline-block;
-  float: none;
-  vertical-align: top; }
-footer nav:last-child {
-  display: none; }
-footer p {
-  clear: both;
-  text-align: center;
-  display: inline;
-  font-size: 1.1em; }
-footer img {
-  text-align: center;
-  display: block;
-  margin: 10px auto;
-  vertical-align: bottom;
-  padding-right: 22px; }
+      margin-bottom: 20px; }
+  #article_link_1 .popular_link {
+    display: none; }
+  .popular_link h3, .popular_link h4 {
+    font-size: 24px; }
+  /*FOOTER*/
+  footer {
+    text-align: center; }
+  .foot_wrap {
+    max-width: 320px;
+    width: 100%;
+    margin: auto; }
+  footer nav:first-child {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+  footer nav:last-child {
+    display: none; }
+  footer p {
+    clear: both;
+    text-align: center;
+    display: inline;
+    font-size: 1.1em; }
+  footer img {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    vertical-align: bottom;
+    padding-right: 22px; } }
 
 @media screen and (min-width: 321px) and (max-width: 549px) {
   .header {
@@ -513,6 +513,12 @@ footer img {
     max-height: 375px;
     max-width: 375px; }
   /*FOOTER*/
+  footer {
+    text-align: center; }
+  .foot_wrap {
+    max-width: 525px;
+    width: 100%;
+    margin: auto; }
   footer {
     text-align: center; }
   .foot_wrap {
